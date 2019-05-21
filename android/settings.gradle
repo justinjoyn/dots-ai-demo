@@ -1,0 +1,3 @@
+rootProject.name = 'dots_ai_demo'
+
+include ':app'
