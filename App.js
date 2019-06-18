@@ -63,8 +63,8 @@ export default class App extends Component {
     }
 
     train(weights, point, actualTeam) {
-        const guessedResult = this.guessTeam(weights, point);
-        const error = actualTeam - guessedResult;
+        const guessedTeam = this.guessTeam(weights, point);
+        const error = actualTeam - guessedTeam;  Guessed Team: ${guessedTeam}    Error: ${error}`);
         const learningRate = 0.01;
         return {
             x: weights.x + point.x * error * learningRate,
